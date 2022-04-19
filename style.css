@@ -1,0 +1,119 @@
+
+body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HTML tags >>  - - - - - - - - - - - - - - - - - - */
+
+    height: 100%;   /* - - 100% view av skjermen - - */
+    margin: 0;      /* Ingen marg fra topp eller sidene */
+    font-size: 16px; /* tekst størrelsen inni body */
+    font-family: fantasy, Lato; /* Første valge av skrift-typen, og andre valget */
+    font-weight: 400; /* - - tykkelsen på skriften / boldness  - - */
+    line-height: 1.8em; /* Mellomroms-høyden << fra >> linjen ovenfra */
+    color: #666; /* tekst fargen */
+}
+
+.pimg1{ /* -------------------- FØRSTE Div boksen -------------------- */
+    background-image: url(../bilde/img1.jpeg); /*  bilde nr 1 */
+    min-height: 100%; /* - - Heile høyden av bilde skal vises. - - */
+}   /* -------------------- / FØRSTE div boks ---------------------------- */
+
+.ptext {    /* -------------------- ANDRE Div boksen / gjelder KUN .ptext -------------------- */
+    position:absolute; /* - - ? posistion:absolute = CENTER vis -> top: 50% og width: 100% - - */
+    top: 50%; /* - - ? ALLTID 50% fra topp (0 margin)- - */
+    width: 100%; /* - - 100% center - - */
+
+    /* 
+        posistion:absolute, top: 50% og width: 100% = En boks CENTER 
+        position:relative; Borderen sitter fast topp av skjerm 
+        position:sticky; Sitter igjen til neste element vil presse bordern opp
+        position:absolute; center vis << top = 50% og width = 100% >> 
+    */
+
+    text-align: center; /* - - gjør TEKSTEN center - - */
+    color: #000; /* - - fargen på tekst inni klassen .ptext - - */
+    font-size: 27px; /* - - tekst størrelsen - - */
+    letter-spacing: 8px; /* - - Mellomromet fra bokstav til bokstav - - */
+    text-transform: uppercase; /* - - gjør  << ALL TEKST >>  som er skrevet med klassen << .ptext >> til UPPERCASE - - */
+}   /* --------------------  / ANDRE div boks ---------------------------- */
+
+.ptext .border{ /* -------------------- GJELDER .ptext  & .border  ------------------- */ 
+    background-color: #111; /* - - Bakgrunnsfargen ( tenk inni borderen) i klassene << .ptext >> og << border >> - - */
+    color: #ffff; /* - - Fargen på teksten i klassene << .ptext >> og << border >> - - */
+    padding: 20px; /* - - Den indre MARGEN i klassene << .ptext >> og << border >> - - */
+}   /* ------------------ / GJELDER .ptext  & .border  ------------------- */
+
+.section-light{ /* ------------------------- .section-light  ------------------------ */
+    background-color: #f4f4f4; /* - - Bakgrunnsfargen ( tenk inni borderen) i klassen << .section-light >> - - */
+    color: #666; /* fargen på teksten inni klassen  .section-light */
+}   /* ----------------------- / .section-light  ------------------------ */
+
+.pimg1, .pimg2, .pimg3{ /* - - - - - - - - - -  Verdiene for ALLE << BILDENE >>  -- - - - - - */ 
+    position: relative; /* - - ? - - */
+
+    opacity: 0.70; /* - - Ga bilde litt blørring ( skurring av kvalitet) - - */
+    background-position: center; /* - - Gjør bilde sentrert - - */
+
+    background-size: cover; /* Bilde går fra heilt fra venstre til høyre */
+    background-repeat: no-repeat; /* - - Det vil bare vise 1 bilde av bilde, << INGEN igjentagelse av bilde >> - - */
+
+    /* 
+    <><><><><><><><>< Parallax ELLER Normal ><><><><><><><><>
+    fixed = parallax  << "heile" bilde vil vise igjenom scrollingen >>
+    scroll = normal << bare en del av bilde vil bli vist i "vinduet" til bilde. >>
+    */
+    background-attachment: fixed;
+}   /* - - - - - - - - - - / Verdiene for ALLE << BILDENE >>  -- - - - - - */ 
+
+/* ---------------------------------------------------------------------- *//* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- *//* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- *//* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- *//* ---------------------------------------------------------------------- */
+
+
+/* - - - - - - - - - -  Bilde 2 & 3,  med mindre << Height >> en bilde 1. - - - - - - - - - - - - - - - - - - */
+.pimg2{
+    background-image: url(../bilde/img2.jpg); /* Posissionen til bilde nr 2 */
+    min-height: 400px; /* MINIMUM størrelse på bilde nr 2,  bilde kan ikke bli mindre en 400 px */
+}
+.pimg3{
+    background-image: url(../bilde/img3.jpg);/* Posissionen til bilde nr 3 */
+    min-height: 400px; /* MINIMUM størrelse på bilde nr 3,  bilde kan ikke bli mindre en 400 px */
+}
+
+
+ /* - - - - - - - - - - klassen SEKSJON sine verdier - - - - - - - - - - - - - - - - - - */ 
+.section{
+    text-align: center; /* Teksten blir sentrert i klassen .section */
+    padding: 50px 80px; /* den INNDRE-MARG top/bunn = 50px og den INNDRE-MARG høyre og venstre = 80px, i klassen .section */
+}
+
+ /* - - - - - - - - - - Den << HVITE >> seksjonen sin verdier - - - - - - - - - - - - - - - - - - */ 
+.section-light{
+    background-color: #f4f4f4; /* .section-light sin bakgrunnsfarge */
+    color: #666; /* .section.light sin tekst farge */
+}
+/* - - - - - - - - - - Den << SORTE >> seksjonen sin verdier - - - - - - - - - - - - - - - - - - */ 
+.section-dark{
+ background-color: #282e34; /* .section-dark sin bakgrunnsfarge */
+ color: #ddd; /* .section-dark sin tekst farge */
+}
+
+
+/* - - - - - - - - - -  Gjør ptext / border / trans << CLASSENE >> til INNVISIBLE - - - - - - - - - - - - - - - - - - */
+.border.trans {
+    background-color: transparent; /* .ptext / .border / .trans sin bakgrunnsfarge = << IGJENNOM-SIKTIG >> */
+}
+/* - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - */ 
+/* - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - */ 
+
+li{
+    list-style-position: inside;
+}
+
+/* - - - - - - - - - -  Tilpassning til mindre skjermer, endrer Parallax ( fiksed ) skjerm til scroll skjerm - - - - - - - - - - -- - - */
+/* - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - */ 
+
+@media(max-width:568px){ /* VIS skjermen blir mindre en 568 px endres bilde effekten fra << FIKSED til SCROLL >> */
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll; /* Bildene står "FAST", blir til en egen "BLOKK" element. */
+    }
+}
