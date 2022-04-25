@@ -11,7 +11,7 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
 }
 
 .pimg1{ /* -------------------- FØRSTE Div boksen -------------------- */
-    background-image: url(../bilde/img1.jpeg); /*  bilde nr 1 */
+    background-image: url(bilder/img1.jpeg); /*  bilde nr 1 */
     min-height: 100%; /* - - Heile høyden av bilde skal vises. - - */
 }   /* -------------------- / FØRSTE div boks ---------------------------- */
 
@@ -70,11 +70,11 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
 
 /* - - - - - - - - - -  Bilde 2 & 3,  med mindre << Height >> en bilde 1. - - - - - - - - - - - - - - - - - - */
 .pimg2{
-    background-image: url(../bilde/img2.jpg); /* Posissionen til bilde nr 2 */
+    background-image: url(bilder/img2.jpg); /* Posissionen til bilde nr 2 */
     min-height: 400px; /* MINIMUM størrelse på bilde nr 2,  bilde kan ikke bli mindre en 400 px */
 }
 .pimg3{
-    background-image: url(../bilde/img3.jpg);/* Posissionen til bilde nr 3 */
+    background-image: url(bilder/img3.jpg);/* Posissionen til bilde nr 3 */
     min-height: 400px; /* MINIMUM størrelse på bilde nr 3,  bilde kan ikke bli mindre en 400 px */
 }
 
