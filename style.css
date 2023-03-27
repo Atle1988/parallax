@@ -76,6 +76,7 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
 .pimg3{
     background-image: url(bilder/img3.jpg);/* Posissionen til bilde nr 3 */
     min-height: 400px; /* MINIMUM størrelse på bilde nr 3,  bilde kan ikke bli mindre en 400 px */
+
 }
 
 
@@ -108,7 +109,14 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
 li{
     list-style-position: inside;
 }
+.section-dark > ul > li{
+    list-style-type: none;
+}
 
+.darkColor{
+    color: #000 !important;
+    text-shadow: 1px 1px white;
+}
 /* - - - - - - - - - -  Tilpassning til mindre skjermer, endrer Parallax ( fiksed ) skjerm til scroll skjerm - - - - - - - - - - -- - - */
 /* - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - */ 
 
