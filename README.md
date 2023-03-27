@@ -1,3 +1,3 @@
 # parallax
 My first parallax home page.
-## To day im learning about merging branches
+I have now pulled code down from github and made some changes on this line
