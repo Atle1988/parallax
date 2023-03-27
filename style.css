@@ -19,7 +19,6 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
     position:absolute; /* - - ? posistion:absolute = CENTER vis -> top: 50% og width: 100% - - */
     top: 50%; /* - - ? ALLTID 50% fra topp (0 margin)- - */
     width: 100%; /* - - 100% center - - */
-
     /* 
         posistion:absolute, top: 50% og width: 100% = En boks CENTER 
         position:relative; Borderen sitter fast topp av skjerm 
@@ -38,6 +37,7 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
     background-color: #111; /* - - Bakgrunnsfargen ( tenk inni borderen) i klassene << .ptext >> og << border >> - - */
     color: #ffff; /* - - Fargen på teksten i klassene << .ptext >> og << border >> - - */
     padding: 20px; /* - - Den indre MARGEN i klassene << .ptext >> og << border >> - - */
+    border-radius: 7px;
 }   /* ------------------ / GJELDER .ptext  & .border  ------------------- */
 
 .section-light{ /* ------------------------- .section-light  ------------------------ */
