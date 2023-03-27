@@ -38,6 +38,7 @@ body, html {    /* - - - - - - - - - -  Alt som skal gjelde i helle << BODY & HT
     background-color: #111; /* - - Bakgrunnsfargen ( tenk inni borderen) i klassene << .ptext >> og << border >> - - */
     color: #ffff; /* - - Fargen på teksten i klassene << .ptext >> og << border >> - - */
     padding: 20px; /* - - Den indre MARGEN i klassene << .ptext >> og << border >> - - */
+    border-radius: 20px;
 }   /* ------------------ / GJELDER .ptext  & .border  ------------------- */
 
 .section-light{ /* ------------------------- .section-light  ------------------------ */
